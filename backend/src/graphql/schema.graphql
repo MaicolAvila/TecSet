@@ -1,0 +1,15 @@
+type Query {
+    equipos: [Equipos!]
+}
+
+type Mutation{
+    createEquipo(title: String!, content: String!, image: String!, value: Int!): Equipos
+}
+
+type Equipos{
+    _id: ID!
+    title: String!
+    content: String!
+    image: String!
+    value: Int
+}

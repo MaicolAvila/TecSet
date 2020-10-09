@@ -1,0 +1,137 @@
+body{
+  margin: 0px;
+  background: #F0F1F4;
+}
+.App {
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+nav{
+  margin: 0px !important;
+}
+ul{
+  margin: 0px;
+  padding: 10px;
+}
+li{
+  display: inline;
+  margin: 10px;
+}
+a{
+  text-decoration: none;
+}
+
+
+.slider {
+  --slider-height-percentage: 18% !important;
+  --slider-transition-duration: 700ms !important;
+  --organic-arrow-thickness: 4px !important;
+  --organic-arrow-border-radius: 0px !important;
+  --organic-arrow-height: 40px !important;
+  --organic-arrow-color: #004643 !important;
+  --control-button-width: 10% !important;
+  --control-button-height: 25% !important;
+  --control-button-background: transparent !important;
+  --control-bullet-color: #0a635e !important;
+  --control-bullet-active-color: #004643 !important;
+  --loader-bar-color: #851515 !important;
+  --loader-bar-height: 6px !important;
+  }
+  h4{
+    font-size: 24px;
+  }
+  h5{
+    font-size: 24px;
+  }
+  .imageBox{
+    border-bottom: 1px solid #F0F1F4;
+    width: 100%;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px;
+    color: rgba(0,0,0,.8);
+  }
+ 
+  .description{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-variant-caps: all-small-caps;
+  }
+  .card{
+    width: 350px;
+    transition: width;
+  }
+  .card:hover{
+    width: 360px;
+    -webkit-box-shadow: 5px 7px 44px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 7px 44px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 7px 44px 0px rgba(0,0,0,0.75);
+  }
+ 
+
+  li{
+    display: inline-block;
+  }
+
+  .titleNav{
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    vertical-align: middle;
+  }
+
+  .navC{
+    background-color: #0C1618;
+    color: white;
+    display: flex;
+  }
+  
+  .inputSearch{
+    height: 36px;
+    vertical-align: middle;
+  }
+
+  .imgNav{
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  .buttonLupa{
+    background: #004643;
+    border: none;
+    height: 36px;
+    
+  }
+
+  .number{
+    color: white;
+    vertical-align: middle;
+    font-size: large;
+  }
+
+  .contact{
+    float: right;
+  }
+  .ulC{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 500px) {
+    .ulC{
+      text-align: -webkit-center;
+      margin: auto;
+    }
+    .contact{
+      float: none;
+    }
+    .titleNav{
+      font-size: 20px;
+    }
+  }
