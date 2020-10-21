@@ -1,6 +1,7 @@
 import { Schema, model } from "mongoose";
 
 const equiposSchema = new Schema({
+
     title:{
         type: String,
         required: true

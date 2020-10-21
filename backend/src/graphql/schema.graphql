@@ -1,5 +1,7 @@
 type Query {
     equipos: [Equipos!]
+    equiposTitle(title: String!): [Equipos!]
+    equiposId(_id: ID!): [Equipos!]
 }
 
 type Mutation{
@@ -13,3 +15,4 @@ type Equipos{
     image: String!
     value: Int
 }
+

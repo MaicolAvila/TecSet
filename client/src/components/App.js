@@ -5,7 +5,7 @@ import './styles/App.css';
 
 import Layout from "./Layout"
 import Home from "../pages/Home";
-import pcDetails from "../pages/pcDetails"
+import pcDetailsComponent from "../pages/pcDetails"
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Layout>
         <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/equipos/:id" component={pcDetails} />
+            <Route exact path="/equipos/:id" component={pcDetailsComponent}  />
         </Switch>
       </Layout>
     </BrowserRouter>

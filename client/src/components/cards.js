@@ -43,7 +43,7 @@ const ListPcsComponent =  ({ data: { equipos = [] }, loading, error } = {}) => {
         return <p>Error</p>
     }
 
-
+    console.log(filteredEquipments)
 
     return(
         <div className="boxCard">       
@@ -58,16 +58,17 @@ const ListPcsComponent =  ({ data: { equipos = [] }, loading, error } = {}) => {
             </div> 
             <ul>
             {
-                filteredEquipments.map((equipos, value) => (
-                    <li key={equipos._id} className="card">
-                        <Link to={`/equipos/${equipos._id}`}>
-                        <div className="imageBox">
-                        <img src={equipos.image} width="150px" height="200px" className="Equipment__Image" ></img>
-                        </div>
-                        <h4 className="description" >{equipos.title}</h4>
-                        <h5 className="description" >{new Intl.NumberFormat().format(equipos.value)} $</h5>
-                        </Link>
-                    </li>
+                filteredEquipments.map((equipos) => (
+                    <Link to={`equipos/${equipos._id}`}  >
+                        <li key={equipos._id} className="card">
+                            
+                            <div className="imageBox">
+                            <img src={equipos.image} width="150px" height="200px" className="Equipment__Image" ></img>
+                            </div>
+                            <h4 className="description" >{equipos.title}</h4>
+                            <h5 className="description" >{new Intl.NumberFormat().format(equipos.value)} $</h5>
+                        </li>
+                    </Link>
                 ))
             }
             </ul>
